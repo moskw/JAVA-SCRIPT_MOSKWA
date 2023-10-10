@@ -1,0 +1,1 @@
+document.write("wykonal: Szymon Moskwa moj numer w dzienniku 21, czyli mam uklad [(21) mod 4=] uklad 1".fontcolor("green").fontsize(6)+"<u>");
