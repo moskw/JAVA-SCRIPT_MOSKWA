@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_Moskwa()
+ {
+ window.close()
+ }
+21
+ </script>
+</head>
+<body>
+ <form>
+ 
+<textarea name="Moskwa" cols="80" rows="25" disabled>
+<html>
+	<body>
+		<h1 style="color: green">MENU</h1>
+		<p>&nbsp;</p>
+		<h1 style="color: red">1 - czerwony</h1>
+		<h1 style="color: blue">2 - niebieski</h1>
+		
+		<div style="color:red;font-size:50px;">
+		<input type="button" name="moskwa" value="Oblicz" onclick="fun_mos()" />
+				
+			<script>
+				 function fun_mos() {
+				 var x_mos = prompt("Podaj kolor", "");
+				 if(x_mos == 1 || x_mos.toLowerCase() == "czerwony") {
+				 document.write('<h1 style="color: red;">wczytałeś kolor czerwony</h1><br />'); }
+				 else if(x_mos == 2 || x_mos.toLowerCase() == "niebieski") {
+				 document.write('<h6 style="color: blue;">wczytałeś kolor niebieski</h6><br />');
+				 } 
+				 }
+
+			 </script>
+		</div>
+		
+	</body>
+</html>
+
+</textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Moskwa()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>
