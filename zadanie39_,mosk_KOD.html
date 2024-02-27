@@ -1,0 +1,40 @@
+!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_Moskwa()
+ {
+ window.close()
+ }
+21
+ </script>
+</head>
+<body>
+ <form>
+ 
+<textarea name="Moskwa" cols="80" rows="25" disabled>
+
+<html>
+<body>
+<script language="JavaScript">
+var rok_mos=prompt("Podaj rok, od którego działa JavaScript=","");
+var a=parseFloat(rok_mos);
+
+if(a == 1995) {
+    document.write('<div style="color:blue;font-size:4em;">Brawo znasz rok od kiedy działa Javasript</div>');
+} else {
+    document.write('<div style="color:red;font-size:7em;">Źle musisz jeszcze poczytać</div>');
+}
+document.write("Wczytany rok=" + a);
+</script>
+</body>
+</html>
+
+</textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Moskwa()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>
