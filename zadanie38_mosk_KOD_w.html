@@ -1,0 +1,86 @@
+!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_Moskwa()
+ {
+ window.close()
+ }
+21
+ </script>
+</head>
+<body>
+ <form>
+ 
+<textarea name="Moskwa" cols="80" rows="25" disabled>
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu z liczbami</title>
+    <style>
+        body {
+            background-color: silver;
+        }
+        .green-text {
+            color: green;
+            font-size: 40px;
+        }
+        .red-text {
+            color: red;
+            font-size: 40px;
+        }
+		.blue-text {
+            color: blue;
+            font-size: 20px;
+    </style>
+</head>
+<body>
+    <script>
+      
+        const imie = "Szymon";
+        const nazwisko = "Moskwa";
+        const dzienUrodzenia = 24;
+
+        const liczba1 = imie.length;
+        const liczba2 = liczba1 + 7;
+        const liczba3 = nazwisko.length;
+        const liczba4 = liczba3 + 4;
+
+       
+        document.write(`<div class="green-text">${imie} ${nazwisko}</div>`);
+        document.write(`<div class="green-text">Liczba1: ${liczba1}</div>`);
+        document.write(`<div class="green-text">Liczba2: ${liczba2}</div>`);
+        document.write(`<div class="green-text">Liczba3: ${liczba3}</div>`);
+        document.write(`<div class="green-text">Liczba4: ${liczba4}</div>`);
+
+        // Wczytanie opcji
+        const opcja = prompt("Podaj numer opcji:");
+
+        // Wybór opcji
+        if (opcja == 3) {
+            document.write(`<div class="green-text">Jesteś w opcji 3 --> teoria</div>`);
+            document.write(`<div class="blue-text">&& i x=3 y=4(x<9&&y>2) wynik>>prawda</div>`);
+			document.write(`<div class="blue-text">||lub x=3 y=4(x==8||y==6 wynik>fałsz</div>`);
+			document.write(`<div class="blue-text">!zaprzeczenie x=3 y=4(x==y)wynik-->prawda</div>`);
+        } else if (opcja == 26) { 
+           
+        } else if (opcja == 74) {
+          
+        } else {
+            document.write(`<div class="red-text">Nieprawidłowa opcja!</div>`);
+        }
+    </script>
+</body>
+</html>
+
+</textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Moskwa()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>
