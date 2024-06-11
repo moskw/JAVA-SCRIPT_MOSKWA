@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zadanie 43 - Moskwa</title>
+    <script>
+        function wypiszParzyste() {
+            var liczba = parseInt(prompt("Podaj liczbę:"));
+
+         
+            if (isNaN(liczba)) {
+                alert("To nie jest liczba!");
+                return;
+            }
+
+     
+            for (var i = 2; i <= liczba; i += 2) {
+                document.write(i + "<br>");
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="wypiszParzyste()">Wypisz liczby parzyste</button>
+</body>
+</html>

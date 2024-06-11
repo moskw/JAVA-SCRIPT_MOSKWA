@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zadanie 44</title>
+    <meta charset="UTF-8">
+    <style>
+        div {
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        var imie = "Szymon";
+        var nazwisko = "Mokswa";
+        var ile_razy_wyswietlic = (nazwisko.length % 4) + 10;
+        var wielkosc_liter = (nazwisko.length % 3) + 40;
+
+        for (var i = 1; i <= ile_razy_wyswietlic; i++) {
+            if (i % 2 !== 0) {
+                document.getElementById("output").innerHTML += '<span style="font-size: ' + wielkosc_liter + 'px;">' + nazwisko + '</span><br>';
+            } else {
+                document.getElementById("output").innerHTML += '<span style="font-size: ' + wielkosc_liter + 'px;">' + imie + '</span><br>';
+            }
+        }
+    </script>
+</body>
+</html>

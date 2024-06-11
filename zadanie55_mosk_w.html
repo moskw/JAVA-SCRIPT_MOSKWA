@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zadanie 55</title>
+    <script type="text/javascript">
+        function zmienTekst() {
+
+            var l1_mos = parseInt(prompt("Podaj pierwszą liczbę z przedziału <20,60>:", ""));
+            var l2_mos = parseInt(prompt("Podaj drugą liczbę z przedziału <20,60>:", ""));
+            var pocz_mos = parseInt(prompt("Podaj wartość początkową wielkości tekstu (np. 20):", ""));
+            var tekst_mos = prompt("Podaj dowolny tekst:", "");
+
+      
+            if (l1_mos < 20 || l1_mos > 60) {
+                alert("Liczba l1 nie należy do przedziału <20,60>");
+                return;
+            }
+            if (l2_mos < 20 || l2_mos > 60) {
+                alert("Liczba l2 nie należy do przedziału <20,60>");
+                return;
+            }
+
+            var i = pocz_mos; 
+          
+            if (l1_mos < l2_mos) {
+           
+                while (i <= 100) {
+                    document.write("<p style='font-size:" + i + "px; color: black;'>" + tekst_mos + "</p>");
+                    i += 5;
+                }
+            } else if (l2_mos < l1_mos) {
+        
+                while (i >= 0) {
+                    document.write("<p style='font-size:" + i + "px; color: black;'>" + tekst_mos + "</p>");
+                    i -= 5;
+                }
+            }
+        }
+    </script>
+</head>
+<body onload="zmienTekst()">
+</body>
+</html>

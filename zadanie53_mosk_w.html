@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zad 53</title>
+    <script type="text/javascript">
+        var a_mos, b_mos;
+        a_mos = prompt("Podaj wartość a: ");
+        b_mos = prompt("Podaj wartość b: ");
+
+    
+        document.write("*".repeat(b_mos) + "<br>");
+
+      
+        for (var i = 1; i <= (a_mos - 2); i++) {
+            var wiersz_mos = "*";
+            for (var j = 1; j <= (b_mos - 2); j++) {
+                wiersz_mos = wiersz_mos + "&nbsp;&nbsp;";
+            }
+            wiersz_mos = wiersz_mos + "*";
+            document.write(wiersz_mos + "<br>");
+        }
+
+    
+        document.write("*".repeat(b_mos));
+    </script>
+</head>
+<body>
+</body>
+</html>

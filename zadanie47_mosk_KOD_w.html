@@ -1,0 +1,52 @@
+!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_Moskwa()
+ {
+ window.close()
+ }
+21
+ </script>
+</head>
+<body>
+ <form>
+ 
+<textarea name="Moskwa" cols="80" rows="25" disabled>
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 47</title>
+</head>
+<body>
+<div style="color:red;font-size:50px;">
+<script language="JavaScript">
+var a=prompt("Podaj pierwszą stronę trójkąta:", "");
+var b=prompt("Podaj pierwszą stronę trójkąta:", "");
+var c=prompt("Podaj pierwszą stronę trójkąta:", "");
+var strona1,strona2,strona3;
+    do {
+ strona1 = parseFloat(a);
+strona2 = parseFloat(b);
+strona3 = parseFloat(c);
+ if(strona1<=strona2+strona3 && strona2 <= strona1+strona3 &&  strona3 <= strona1+strona2){
+    document.write("Może istnieć");
+}else{
+    document.write("nie może istnieć");
+}
+    } while (strona1 < 0 && strona2 < 0 && strona3 < 0);
+</script>
+</div>
+</body>
+</html>
+
+</textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Moskwa()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>

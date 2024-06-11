@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div style="color:red;font-size:18px;">
+            <script language="JavaScript">
+            var x = prompt("Podaj liczbę 1 =", "");
+            var Liczba1_mos = parseInt(x);
+            var x = prompt("Podaj liczbę 2 =", "");
+            var Liczba2_mos = parseInt(x);
+            
+            if (Liczba1_mos < Liczba2_mos) {
+                for (var i = Liczba1_mos; i <= Liczba2_mos; i++) { 
+                    if (i % 2 == 1) {
+                        document.write("<p style=\"font-size:18px; color:black;\"><br>" + i + "<br></p>"); 
+                    }
+                }
+            }
+            if (Liczba1_mos > Liczba2_mos) {
+                for (var i = Liczba1_mos; i >= Liczba2_mos; i--) { 
+                    if (i % 2 == 1) {
+                        document.write("<p style=\"font-size:18px; color:black;\"><br>" + i + "<br></p>"); 
+                    }
+                }
+            }
+            if (Liczba1_mos == Liczba2_mos) {
+                document.write("Brak obliczeń"); 
+            }
+            </script>
+        </div>
+    </body>
+</html>

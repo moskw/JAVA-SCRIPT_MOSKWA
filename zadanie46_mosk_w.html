@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zadanie 46</title>
+    <script>
+        function sprawdzTrojkat() {
+            let a, b, c;
+            let isValid = false;
+            let attempts = 0;
+            const maxAttempts = 10; // Ustal maksymalną liczbę prób
+
+            do {
+                a = parseFloat(prompt("Podaj bok a (większy od 0):"));
+                b = parseFloat(prompt("Podaj bok b (większy od 0):"));
+                c = parseFloat(prompt("Podaj bok c (większy od 0):"));
+
+                if (a > 0 && b > 0 && c > 0) {
+                    if (a + b > c && a + c > b && b + c > a) {
+                        isValid = true;
+                        alert("Podane boki tworzą trójkąt.");
+                    } else {
+                        alert("Podane boki nie tworzą trójkąta. Spróbuj ponownie.");
+                    }
+                } else {
+                    alert("Każdy bok musi być większy od zera. Spróbuj ponownie.");
+                }
+
+                attempts++;
+                if (attempts >= maxAttempts) {
+                    alert("Przekroczono maksymalną liczbę prób.");
+                    break;
+                }
+            } while (!isValid);
+        }
+    </script>
+</head>
+<body>
+    <h1>Sprawdzanie trójkąta</h1>
+    <button onclick="sprawdzTrojkat()">Sprawdź trójkąt</button>
+</body>
+</html>
